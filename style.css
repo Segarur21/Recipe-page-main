@@ -73,16 +73,17 @@ h2.prep-time-title {
   margin-block-end: 1rem;
 }
 .prep-time ul {
-  padding-left: 2rem;
+  padding-inline-start: 2rem;
   margin: 0;
 }
 
 .prep-time li {
   padding-left: 1.6rem;
-  margin-bottom: 0.8rem;
+  padding-inline-start: 1.6rem;
+  margin-block-end: 0.8rem;
 }
 ::marker {
-  color: hsl(332, 51%, 32%);
+  color: var(--rose-800);
   font-size: 1.2rem;
 }
 
@@ -98,13 +99,13 @@ h2.prep-time-title {
 
 .ingredients ul,
 .instructions ol {
-  padding-left: 2rem;
+  padding-inline-start: 2rem;
 }
 
 .section-divider {
-  border-bottom: 1px solid var(--stone-150);
-  padding-bottom: 2.4rem;
-  margin-bottom: 2.4rem;
+  border-block-end: 1px solid var(--stone-150);
+  padding-block-end: 2.4rem;
+  margin-block-end: 2.4rem;
 }
 
 .step {
@@ -131,8 +132,8 @@ h2.prep-time-title {
 }
 
 .nutrition-table td {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding-block-start: 0.8rem;
+  padding-block-end: 0.8rem;
 }
 
 .nutrition-value {
@@ -140,10 +141,10 @@ h2.prep-time-title {
   font-weight: 700;
 }
 .nutrition-label{
-    padding-left: 2.4rem;
+  padding-inline-start: 2.4rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   body {
     display: flex;
     justify-content: center;
